@@ -1,49 +1,87 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <style>
+        .reveal section img {
+            margin: 15px 0px;
+            background: rgba(0, 0, 0, 0);
+            border: 0px solid #222;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+        }
+        .product {
+            text-align:center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <p>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                        <img border="0" width="420" height="420" data-src="logo-radiocut.png" alt="RadioCut">
+                        <h2>Press Kit</h2>
+                    </p>
+                </section>
+                <section>
+                    <h1>RadioCut</h1>
+                    <p>RadioCut is a listening and sharing platform for radio station content where you can hear already aired radio shows and share audio segments. It is the ideal platform for radio—a proven, century old mass media outlet—in the age of Internet, where linking, searching, sharing and on-demand access are must-have features of all media.
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+                    </p>
+                </section>
+
+                <section><h1>The product</h1>
+                <table>
+                    <tr>
+                        <td class="product-td" style="width: 40%;vertical-align: top;">
+                            <h3 class="product">App</h3><img border="0" data-src="app.png" alt="RadioCut">
+                        </td>
+                        <td class="product-td" style="width: 60%;vertical-align: top;">
+                            <h3 class="product">Web</h3><img border="0" data-src="web.jpg" alt="RadioCut">
+                        </td>
+                    </tr>
+                </table>
+                </section>
+
+                <section><h1>The team</h1></section>
+
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
 </html>
